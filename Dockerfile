@@ -14,9 +14,9 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 
 RUN apt-get install nodejs -y
 
-RUN apt-get update -y
+#RUN apt-get update -y
 
-RUN apt-get install npm -y
+#RUN apt-get install npm -y
 
 
 RUN useradd -ms /bin/bash ppitu
