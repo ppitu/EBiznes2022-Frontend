@@ -34,6 +34,6 @@ jobs:
       with:
         script: |
           cd frontend
-          docker build -t myappfront .
-          docker run -d --name myappfront -p 3000:3000 --rm myappfront
+          docker build -t front .
+          docker run -d --name front -p 3000:3000 --rm front
           ls
