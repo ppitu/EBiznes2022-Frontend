@@ -10,6 +10,8 @@ RUN apt-get install vim -y
 RUN apt-get install curl -y
 RUN apt-get install sudo -y
 
+RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+
 RUN apt-get install nodejs -y
 
 RUN apt-get update -y
