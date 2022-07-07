@@ -34,6 +34,7 @@ jobs:
       with:
         script: |
           cd frontend
+          docker rm -f front
           docker build -t front .
           docker run -d --name front -p 3000:3000 --rm front
           ls
