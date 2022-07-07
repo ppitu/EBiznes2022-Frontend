@@ -16,12 +16,6 @@ RUN apt-get update -y
 
 RUN apt-get install npm -y
 
-RUN rm -rf node_modules
-RUN rm -rf package-lock.json
-
-RUN npm install react-scripts
-
-RUN npm install
 
 RUN useradd -ms /bin/bash ppitu
 RUN adduser ppitu sudo
@@ -29,5 +23,12 @@ RUN adduser ppitu sudo
 COPY ./ /home/ppitu/Project
 
 WORKDIR /home/ppitu/Project
+
+RUN rm -rf node_modules
+RUN rm -rf package-lock.json
+
+RUN npm install react-scripts
+
+RUN npm install
 
 CMD npm start
