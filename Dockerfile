@@ -16,9 +16,12 @@ RUN apt-get update -y
 
 RUN apt-get install npm -y
 
-RUN rm -f node_modules
+RUN rm -rf node_modules
+RUN rm -rf package-lock.json
 
-RUN npm install -y
+RUN npm install react-scripts
+
+RUN npm install
 
 RUN useradd -ms /bin/bash ppitu
 RUN adduser ppitu sudo
