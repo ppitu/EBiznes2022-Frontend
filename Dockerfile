@@ -16,6 +16,8 @@ RUN apt-get update -y
 
 RUN apt-get install npm -y
 
+RUN rm -f node_modules
+
 RUN npm install -y
 
 RUN useradd -ms /bin/bash ppitu
