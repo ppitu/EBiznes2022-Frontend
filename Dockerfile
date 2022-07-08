@@ -27,7 +27,7 @@ COPY ./ /home/ppitu/Project
 WORKDIR /home/ppitu/Project
 
 RUN rm -rf node_modules
-RUN rm -rf package-lock.json
+#RUN rm -rf package-lock.json
 
 RUN npm install react-scripts
 

@@ -10,7 +10,7 @@ class SignInModal extends Component {
     }
 
     navigateTo = (url) => {
-        window.location.assign("http://localhost:1323" + url)
+        window.location.assign("http://54.38.54.4:1323" + url)
     }
 
     render() {
