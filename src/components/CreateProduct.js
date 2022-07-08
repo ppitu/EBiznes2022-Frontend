@@ -13,7 +13,7 @@ function CreateProduct() {
     const addProduct = () => {
         axios.post('http://54.38.54.4:1323/products', {
             name: name,
-            category_id: parseInt(categoryId)
+            category_id: 1//parseInt(categoryId)
         })
             .then(function(response) {
                 console.log(response)
