@@ -58,7 +58,7 @@ export default function CheckoutForm() {
       elements,
       confirmParams: {
         // Make sure to change this to your payment completion page
-        return_url: "http://localhost:1323",
+        return_url: "http://54.38.54.4:1323",
       },
     });
 
