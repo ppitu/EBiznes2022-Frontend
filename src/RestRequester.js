@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const serverURL = "http://localhost:1323";
+const serverURL = "http://54.38.54.4:1323";
 const categoryURL = `${serverURL}/categories`;
 const productURL = `${serverURL}/products`;
 const cartURL = `${serverURL}/cart`;
