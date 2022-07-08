@@ -20,7 +20,7 @@ function Cart() {
     const deleteCart = () => {
         return async(e)=> {
             e.preventDefault();
-            axios.delete(`http://localhost:1323/cart`)
+            axios.delete(`http://54.38.54.4:1323/cart`)
 
             setCart([]);
         }
