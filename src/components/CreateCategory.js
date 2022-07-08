@@ -5,7 +5,7 @@ function CreateCategory() {
     const [name, setName] = useState();
 
     const addCategory = () => {
-            axios.post('http://localhost:1323/categories', {
+            axios.post('http://54.38.54.4:1323/categories', {
                 name: name
             })
             .then(function(response){

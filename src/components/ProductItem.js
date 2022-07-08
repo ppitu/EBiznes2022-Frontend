@@ -11,7 +11,7 @@ const ProductItem = ({product}) => {
         return async (e) => {
             e.preventDefault()
             setCart(id);
-            axios.post(`http://localhost:1323/cart`, {
+            axios.post(`http://54.38.54.4:1323/cart`, {
                 product_id: id
             })
 

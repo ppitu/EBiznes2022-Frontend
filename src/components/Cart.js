@@ -30,7 +30,7 @@ function Cart() {
 
     useEffect(() => {
       // Create PaymentIntent as soon as the page loads
-      fetch("http://localhost:1323/users/create-payment-intent", {
+      fetch("http://54.38.54.4:1323/users/create-payment-intent", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ items: [{ id: "xl-tshirt" }] }),

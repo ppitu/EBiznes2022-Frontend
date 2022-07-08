@@ -7,7 +7,7 @@ function Payment() {
 
 
     useEffect(() => {
-        axios.post('http://localhost:1323/orders', payment)
+        axios.post('http://54.38.54.4:1323/orders', payment)
             .then(response => this.setState({paymentId: response.data.id}));
     })
 
